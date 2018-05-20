@@ -83,18 +83,20 @@
 		<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web> </processTypes> 
 		</configuration> </plugin> </plugins> </build> -->
 	<!-- Deploy with war file -->
-	<!-- <build> <plugins> <plugin> <groupId>com.heroku.sdk</groupId> <artifactId>heroku-maven-plugin</artifactId> 
-		<configuration> <appName>ng-chatapp</appName> </configuration> </plugin> 
-		</plugins> </build> -->
-
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<configuration>
+					<appName>ng-chatapp</appName>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> </plugins> </build> -->
 
 
 </project>
