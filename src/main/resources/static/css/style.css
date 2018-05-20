@@ -1,0 +1,34 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header-div {
+}
+
+.body-div {
+}
+
+.footer-div {
+}
+
+.col-lg-12 {
+	margin-top: 2em !important;
+	margin-bottom: 3em !important;
+}
+
+img {
+	width: 120px;
+	height: 80px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:hover .room-name {
+	color: #282838;
+	font-weight: bold;
+}
+
+
+
