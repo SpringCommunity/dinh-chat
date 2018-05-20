@@ -56,7 +56,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
@@ -72,10 +71,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>commons-digester</groupId>
-			<artifactId>commons-digester</artifactId>
-		</dependency>
 	</dependencies>
 	<!-- Deploy with standardalone -->
 	<!-- <build> <plugins> <plugin> <groupId>com.heroku.sdk</groupId> <artifactId>heroku-maven-plugin</artifactId> 
@@ -83,20 +78,20 @@
 		<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web> </processTypes> 
 		</configuration> </plugin> </plugins> </build> -->
 	<!-- Deploy with war file -->
-	<build>
+<!-- 	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.heroku.sdk</groupId>
 				<artifactId>heroku-maven-plugin</artifactId>
 				<configuration>
-					<appName>ng-chatapp</appName>
+					<appName>dinh-chat</appName>
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 
-	<!-- <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
-		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> </plugins> </build> -->
+	<build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> </plugins> </build>
 
 
 </project>
