@@ -1,4 +1,4 @@
-package com.herokuuapp;
+package com.herokuuapp.websocket;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -8,7 +8,7 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 
 @Configuration
 @EnableWebSocketMessageBroker
-public class WebsockConfiguration extends AbstractWebSocketMessageBrokerConfigurer {
+public class SocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 	
 	    @Override
 	    public void configureMessageBroker(MessageBrokerRegistry config) {
